@@ -1,26 +1,177 @@
 /* Color Palette
-# - color 1
-# - color 2
-# - color 3
-# - color 4
+#1F2937 - Dark navy
+#3B82F6 - Blue
+#E0F2FE - Light blue
+#F8FAFC - Light background
+#FFFFFF - White
 */
 
-/* Global styles 
+/* Global styles
 ------------------------------------*/
-body {
-    /*background: lightblue;*/
+
+* {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background-color: #F8FAFC;
+    color: #1F2937;
+    font-family: "Montserrat", Arial, sans-serif;
+    line-height: 1.6;
+}
 
-/* Header & Footer 
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+h1 {
+    margin: 20px 0 5px;
+    font-size: 42px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #3B82F6;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Header and Footer
 ------------------------------------*/
 
+header {
+    padding: 60px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1F2937;
+}
 
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
-/* Work Experience
+header h2 {
+    color: #E0F2FE;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 24px;
+}
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1F2937;
+}
+
+footer h2 {
+    color: #FFFFFF;
+}
+
+footer a {
+    margin: 0 8px;
+    color: #E0F2FE;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/* Main content
 ------------------------------------*/
 
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
 
-
-/* Education
+/* Resume sections
 ------------------------------------*/
+
+.work-experience,
+.academic-projects,
+.education,
+.leadership,
+.skills {
+    margin: 30px 20px;
+    padding: 30px;
+    border-left: 6px solid #3B82F6;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.work-experience {
+    background-color: #E0F2FE;
+}
+
+.academic-projects {
+    background-color: #FFFFFF;
+    border-left-color: #1F2937;
+}
+
+.education {
+    background-color: #EAF4FF;
+    border-left-color: #3B82F6;
+}
+
+.leadership {
+    background-color: #DCEEFF;
+    border-left-color: #1F2937;
+}
+
+.skills {
+    background-color: #F1F7FC;
+    border-left-color: #3B82F6;
+}
+
+/* Section headings
+------------------------------------*/
+
+section h2 {
+    color: #1F2937;
+}
+
+section h3 {
+    color: #3B82F6;
+}
+
+/* Mobile screen adjustments
+------------------------------------*/
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .work-experience,
+    .academic-projects,
+    .education,
+    .leadership,
+    .skills {
+        margin: 20px 12px;
+        padding: 22px;
+    }
+}
