@@ -1,4 +1,4 @@
-# HW7 Resume Site
+# HW6 Resume Site
 
- https://jklmn213.github.io/comp484-hw7
+ https://jklmn213.github.io/comp484-hw6
  /
