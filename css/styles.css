@@ -21,13 +21,6 @@ body {
     line-height: 1.6;
 }
 
-.content-wrap {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 50px;
-    overflow: hidden;
-}
-
 h1,
 h2,
 h3 {
@@ -65,12 +58,10 @@ header {
 }
 
 header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
-}
-
-header h1,
-header h2 {
-    margin: 0;
 }
 
 header h2 {
@@ -100,11 +91,6 @@ footer a {
 footer a:hover {
     color: #FFFFFF;
     text-decoration: underline;
-}
-
-.contact-info a {
-    display: inline-block;
-    padding: 10px;
 }
 
 /* Main content
@@ -164,29 +150,6 @@ section h3 {
     color: #3B82F6;
 }
 
-/* Columns
-------------------------------------*/
-
-.column-narrow {
-    width: 30%;
-    float: left;
-    padding-right: 3%;
-    min-height: 175px;
-}
-
-.column-wide {
-    width: 70%;
-    float: left;
-    min-height: 225px;
-}
-
-/* Profile image
-------------------------------------*/
-
-.profile-img {
-    border-radius: 50%;
-}
-
 /* Mobile screen adjustments
 ------------------------------------*/
 
@@ -203,10 +166,6 @@ section h3 {
         font-size: 20px;
     }
 
-    .content-wrap {
-        padding: 25px;
-    }
-
     .work-experience,
     .academic-projects,
     .education,
@@ -214,22 +173,5 @@ section h3 {
     .skills {
         margin: 20px 12px;
         padding: 22px;
-    }
-
-    .column-narrow,
-    .column-wide {
-        width: 100%;
-        float: none;
-        min-height: auto;
-    }
-
-    .column-narrow {
-        padding-right: 0;
-    }
-
-    .profile-img {
-        width: 180px;
-        display: block;
-        margin: 0 auto 20px;
     }
 }
